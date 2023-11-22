@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "sweetalert2": "^11.10.1"
+  }
+}

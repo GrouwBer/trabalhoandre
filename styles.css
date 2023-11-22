@@ -1,0 +1,153 @@
+#board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1100px;
+  height: auto;
+  border: 1px solid black;
+
+}
+
+#player1, #player2 {
+  transition: top 0.5s, left 0.5s;
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  font-size: 24px;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+#square2,
+#square7,
+#square8,
+#square15,
+#square21,
+#square28,
+#square36,
+#square51,
+#square71,
+#square78 {
+  background-color: #90EE90;
+  /* verde claro */
+}
+
+#square16,
+#square47,
+#square49,
+#square56,
+#square62,
+#square64,
+#square87,
+#square93,
+#square95,
+#square99 {
+  background-color: #FFA07A;
+  /* laranja claro */
+}
+
+#square38,
+#square14,
+#square31,
+#square26,
+#square42,
+#square84,
+#square44,
+#square67,
+#square91,
+#square98 {
+  background-color: #ADD8E6;
+  /* azul claro */
+}
+
+#player1,
+#player2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: yellow;
+  position: absolute;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+#player1 {
+  top: 550px;
+  left: 50px;
+  animation-name: player1-animation;
+}
+
+#player2 {
+  background-color: blue;
+  top: 550px;
+  left: 150px;
+  animation-name: player2-animation;
+}
+
+
+#roll-dice {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease-in-out;
+}
+
+#roll-dice:hover {
+  background-color: #3e8e41;
+}
+
+#dice {
+  border-radius: 15px;
+  width: 100px;
+  height: 100px;
+  background: white;
+  border: 1px solid black;
+  position: relative;
+  animation: roll 1s ease-out;
+  transition: all 1s ease-in-out;
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 1000;
+}
+#dice.show {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#dice-number {
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  font-weight: bold;
+
+}

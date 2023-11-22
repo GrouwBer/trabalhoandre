@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+    <title>Cobras e Escadas</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+    <div id="board">
+        <!-- Casas do tabuleiro -->
+        <div class="square" id="square91">91</div>
+        <div class="square" id="square92">92</div>
+        <div class="square" id="square93">93</div>
+        <div class="square" id="square94">93</div>
+        <div class="square" id="square95">95</div>
+        <div class="square" id="square96">96</div>
+        <div class="square" id="square97">97</div>
+        <div class="square" id="square98">98</div>
+        <div class="square" id="square99">99</div>
+        <div class="square" id="square100">100</div>
+        <div class="square" id="square81">81</div>
+        <div class="square" id="square82">82</div>
+        <div class="square" id="square83">83</div>
+        <div class="square" id="square84">84</div>
+        <div class="square" id="square85">85</div>
+        <div class="square" id="square86">86</div>
+        <div class="square" id="square87">87</div>
+        <div class="square" id="square88">88</div>
+        <div class="square" id="square89">89</div>
+        <div class="square" id="square90">90</div>
+        <div class="square" id="square71">71</div>
+        <div class="square" id="square72">72</div>
+        <div class="square" id="square73">73</div>
+        <div class="square" id="square74">74</div>
+        <div class="square" id="square75">75</div>
+        <div class="square" id="square76">76</div>
+        <div class="square" id="square77">77</div>
+        <div class="square" id="square78">78</div>
+        <div class="square" id="square79">79</div>
+        <div class="square" id="square80">80</div>
+        <div class="square" id="square61">61</div>
+        <div class="square" id="square62">62</div>
+        <div class="square" id="square63">63</div>
+        <div class="square" id="square64">64</div>
+        <div class="square" id="square65">65</div>
+        <div class="square" id="square66">66</div>
+        <div class="square" id="square67">67</div>
+        <div class="square" id="square68">68</div>
+        <div class="square" id="square69">69</div>
+        <div class="square" id="square70">70</div>
+        <div class="square" id="square51">51</div>
+        <div class="square" id="square52">52</div>
+        <div class="square" id="square53">53</div>
+        <div class="square" id="square54">54</div>
+        <div class="square" id="square55">55</div>
+        <div class="square" id="square56">56</div>
+        <div class="square" id="square57">57</div>
+        <div class="square" id="square58">58</div>
+        <div class="square" id="square59">59</div>
+        <div class="square" id="square60">60</div>
+        <div class="square" id="square41">41</div>
+        <div class="square" id="square42">42</div>
+        <div class="square" id="square43">43</div>
+        <div class="square" id="square44">44</div>
+        <div class="square" id="square45">45</div>
+        <div class="square" id="square46">46</div>
+        <div class="square" id="square47">47</div>
+        <div class="square" id="square48">48</div>
+        <div class="square" id="square49">49</div>
+        <div class="square" id="square50">50</div>
+        <div class="square" id="square31">31</div>
+        <div class="square" id="square32">32</div>
+        <div class="square" id="square33">33</div>
+        <div class="square" id="square34">34</div>
+        <div class="square" id="square35">35</div>
+        <div class="square" id="square36">36</div>
+        <div class="square" id="square37">37</div>
+        <div class="square" id="square38">38</div>
+        <div class="square" id="square39">39</div>
+        <div class="square" id="square40">40</div>
+        <div class="square" id="square21">21</div>
+        <div class="square" id="square22">22</div>
+        <div class="square" id="square23">23</div>
+        <div class="square" id="square24">24</div>
+        <div class="square" id="square25">25</div>
+        <div class="square" id="square26">26</div>
+        <div class="square" id="square27">27</div>
+        <div class="square" id="square28">28</div>
+        <div class="square" id="square29">29</div>
+        <div class="square" id="square30">30</div>
+        <div class="square" id="square11">11</div>
+        <div class="square" id="square12">12</div>
+        <div class="square" id="square13">13</div>
+        <div class="square" id="square14">14</div>
+        <div class="square" id="square15">15</div>
+        <div class="square" id="square16">16</div>
+        <div class="square" id="square17">17</div>
+        <div class="square" id="square18">18</div>
+        <div class="square" id="square19">19</div>
+        <div class="square" id="square20">20</div>
+        <div class="square" id="square1">1</div>
+        <div class="square" id="square2">2</div>
+        <div class="square" id="square3">3</div>
+        <div class="square" id="square4">4</div>
+        <div class="square" id="square5">5</div>
+        <div class="square" id="square6">6</div>
+        <div class="square" id="square7">7</div>
+        <div class="square" id="square8">8</div>
+        <div class="square" id="square9">9</div>
+        <div class="square" id="square10">10</div>
+    </div>
+    </div>
+
+    <div id="players">
+        <!-- Peças dos jogadores -->
+        <div class="player" id="player1"></div>
+        <div class="player" id="player2"></div>
+    </div>
+    <div id="dice">
+        <span id="dice-number"></span>
+    </div>
+    <button id="roll-dice">Jogar o dado</button>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
