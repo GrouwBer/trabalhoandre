@@ -37,7 +37,7 @@ const questions = [
   { question: "Qual é a soma dos ângulos internos de um triângulo?", answer: "180" },
   { question: "Simplifique a expressão: 5b - (2b + 3b)", answer: "0" },
   { question: "Resolva a equação para y: 2y/4 = 3", answer: "6" },
-  { question: "Calcule a área de um círculo com raio 7 unidades (use π = 3.14).", answer: "154" },
+  { question: "Calcule a área de um círculo com raio 7 unidades (use π = 3.14).", answer: "153.86" },
   { question: "Qual é o resultado de 25 - 13?", answer: "12" },
   { question: "Simplifique a expressão: 6c - 2c + 4c", answer: "8c" },
   { question: "Resolva a equação para x: 2(x + 5) = 16", answer: "6" },
