@@ -20,7 +20,7 @@ const questions = [
   { question: "Simplifique a expressão: 2x + 4 - 3x", answer: "x + 4" },
   { question: "Resolva a equação para x: 2(x - 3) = 8", answer: "7" },
   { question: "Calcule a área de um quadrado com lado de comprimento 6 unidades.", answer: "36" },
-  { question: "Se um retângulo tem comprimento 8 unidades e largura 5 unidades, qual é sua área?", answer: "40" },
+  { question: "Se um retângulo tem comprimento 8 unidades e largura 5 unidades de altura, qual é sua área?", answer: "40" },
   { question: "Qual é o resultado de 12 ÷ 4?", answer: "3" },
   { question: "Simplifique a fração: 8/12", answer: "2/3" },
   { question: "Calcule o perímetro de um retângulo com lados de comprimento 9 unidades e largura 5 unidades.", answer: "28" },
@@ -96,7 +96,7 @@ const questions = [
   { question: "Se um círculo tem raio 10 unidades, qual é sua circunferência? (use π = 3.14)", answer: "62.8" },
   { question: "Qual é o resultado de 14 ÷ 7?", answer: "2" },
   { question: "Simplifique a fração: 15/25", answer: "3/5" },
-  { question: "Calcule o perímetro de um retângulo com lados de comprimento 6 unidades e largura 8 unidades.", answer: "28" },
+  { question: "Calcule o perímetro de um retângulo com lados de comprimento 6 unidades e largura 8 unidades.", answer: "48" },
   { question: "Resolva a equação para x: 2(x + 3) = 16", answer: "5" },
   { question: "Qual é o volume de uma caixa com comprimento 5 unidades, largura 4 unidades e altura 7 unidades?", answer: "140" },
   { question: "Qual é o resultado de 5 + 3²?", answer: "14" },
@@ -133,30 +133,24 @@ function rollDice() {
 
 // Initial and final positions of the ladders
 const ladders = {
-  2: 38,
-  7: 14,
-  8: 31,
-  15: 26,
-  21: 42,
-  28: 84,
-  36: 44,
-  51: 67,
-  71: 91,
-  78: 98,
+  7: 16,
+  14: 32,
+  27: 55,
+  41: 85,
+  49: 67,
+  60: 80,
+  66: 77,
+  82: 91,
 };
 
 // Initial and final positions of the snakes
 const snakes = {
-  16: 6,
-  47: 26,
-  49: 11,
-  56: 53,
-  62: 19,
-  64: 60,
-  87: 24,
-  93: 73,
-  95: 75,
-  99: 78,
+  43: 2,
+  34: 25,
+  38: 20,
+  65: 47,
+  86: 53,
+  99: 8,
 };
 
 // Function to move the player
