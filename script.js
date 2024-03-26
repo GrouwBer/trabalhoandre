@@ -15,7 +15,7 @@ const player2Data = {
 };
 
 // Define questions and answers
-const questions = [
+const originalQuestions = [
   { question: "Qual é o resultado de 3 x 5?", answer: "15" },
   { question: "Simplifique a expressão: 2x + 4 - 3x", answer: "x + 4" },
   { question: "Resolva a equação para x: 2(x - 3) = 8", answer: "7" },
@@ -125,6 +125,8 @@ const questions = [
   { question: "Calcule a área de um hexágono regular com lado de comprimento 6 unidades. (Utilize raiz de 3 = 1,7) ", answer: "91.80" },
 ];
 
+let questions = [...originalQuestions];
+
 
 function rollDice() {
   return Math.floor(Math.random() * 6) + 1;
@@ -188,17 +190,24 @@ function movePlayer(player, steps) {
   renderPlayers(); // Update the player's position in the UI
 }
 
-// Function to play the round
+
 // Function to play the round
 function playRound(player) {
+
+  if (questions.length === 0) {
+    // Reset the questions array to the original questions
+    questions = [...originalQuestions];
+  }
   // Ask a question to the player
-  const randomQuestion =
-    questions[Math.floor(Math.random() * questions.length)];
+  const randomIndex = Math.floor(Math.random() * questions.length);
+  const randomQuestion = questions[randomIndex];
+  questions.splice(randomIndex, 1);
 
   Swal.fire({
     title: `${player.name}, ${randomQuestion.question}`,
     input: 'text',
-    inputPlaceholder: 'Your answer'
+    inputPlaceholder: 'Your answer',
+    allowOutsideClick: false
   }).then((result) => {
     if (result.value.toLowerCase() === randomQuestion.answer.toLowerCase()) {
       Swal.fire(
@@ -247,16 +256,16 @@ function renderPlayers() {
   const boardSize = 10;
   const player1Position = boardSize - Math.floor((player1Data.position - 1) / boardSize) - 1;
   const player2Position = boardSize - Math.floor((player2Data.position - 1) / boardSize) - 1;
-  const player1X = ((player1Data.position - 1) % boardSize) * squareSize + squareSize / 2;
-  const player2X = ((player2Data.position - 1) % boardSize) * squareSize + squareSize / 2;
-  const player1Y = player1Position * squareSize + squareSize / 2;
-  const player2Y = player2Position * squareSize + squareSize / 2;
+  const player1X = ((player1Data.position - 1) % boardSize) * squareSize + squareSize / 2 + 793;
+  const player2X = ((player2Data.position - 1) % boardSize) * squareSize + squareSize / 2 + 793;
+  const player1Y = player1Position * squareSize + squareSize / 2 + 20;
+  const player2Y = player2Position * squareSize + squareSize / 2 + 20;
 
   // Set the position of the players in CSS
   player1.style.top = `${player1Y}px`;
   player1.style.left = `${player1X}px`;
   player2.style.top = `${player2Y}px`;
-  player2.style.left = `${player2X}px`;
+  player2.style.left = `${player2X}px`; 
 }
 
 // Select the roll dice button
