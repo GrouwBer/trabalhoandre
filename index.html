@@ -3,9 +3,13 @@
 
 
 <head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Cobras e Escadas</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
 </head>
 
 <body>
@@ -113,18 +117,18 @@
         <div class="square" id="square8">8</div>
         <div class="square" id="square9">9</div>
         <div class="square" id="square10">10</div>
+        <div id="players">
+            <!-- Peças dos jogadores -->
+            <div class="player" id="player1"></div>
+            <div class="player" id="player2"></div>
+        </div>
     </div>
-    </div>
+    <button id="roll-dice">Jogar o dado</button>
+   
 
-    <div id="players">
-        <!-- Peças dos jogadores -->
-        <div class="player" id="player1"></div>
-        <div class="player" id="player2"></div>
-    </div>
     <div id="dice">
         <span id="dice-number"></span>
     </div>
-    <button id="roll-dice">Jogar o dado</button>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="module" src="script.js"></script>
 </body>

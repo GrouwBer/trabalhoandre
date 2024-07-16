@@ -16,8 +16,53 @@ const player2Data = {
 
 // Define questions and answers
 const originalQuestions = [
+
+  { question: "Qual é o resultado de 2 + 3?", answer: "5" },
+  { question: "Simplifique a expressão: 3x + 2 - 4x", answer: "2 - x" },
+  { question: "Resolva a equação para x: 3(x - 1) = 6", answer: "3" },
+  { question: "Calcule a área de um quadrado com lado de comprimento 3 unidades.", answer: "9" },
+  { question: "Se um retângulo tem comprimento 4 unidades e largura 3 unidades, qual é sua área?", answer: "12" },
+  { question: "Qual é o resultado de 6 ÷ 3?", answer: "2" },
+  { question: "Simplifique a fração: 4/8", answer: "1/2" },
+  { question: "Calcule o perímetro de um retângulo com lados de comprimento 4 unidades e largura 6 unidades.", answer: "20" },
+  { question: "Resolva a equação para x: 2x + 3 = 11", answer: "4" },
+  { question: "Qual é o volume de uma caixa com comprimento 2 unidades, largura 3 unidades e altura 4 unidades?", answer: "24" },
+  { question: "Qual é o resultado de 2 + 3?", answer: "5" },
+  { question: "Simplifique a expressão: 4x + 2 - 3x", answer: "x + 2" },
+  { question: "Resolva a equação para x: 2(x - 4) = 6", answer: "7" },
+  { question: "Calcule a área de um quadrado com lado de comprimento 4 unidades.", answer: "16" },
+  { question: "Se um retângulo tem comprimento 6 unidades e largura 4 unidades, qual é sua área?", answer: "24" },
+  { question: "Qual é o resultado de 10 ÷ 2?", answer: "5" },
+  { question: "Simplifique a fração: 6/9", answer: "2/3" },
+  { question: "Qual é o resultado de 2 + 2?", answer: "4" },
+  { question: "Simplifique a expressão: 3x + 2 - 4x", answer: "2 - x" },
+  { question: "Resolva a equação para x: 3(x - 1) = 6", answer: "3" },
+  { question: "Calcule a área de um quadrado com lado de comprimento 3 unidades.", answer: "9" },
+  { question: "Se um retângulo tem comprimento 4 unidades e largura 3 unidades, qual é sua área?", answer: "12" },
+  { question: "Qual é o resultado de 6 ÷ 3?", answer: "2" },
+  { question: "Simplifique a fração: 4/8", answer: "1/2" },
+  { question: "Calcule o perímetro de um retângulo com lados de comprimento 4 unidades e largura 6 unidades.", answer: "20" },
+  { question: "Resolva a equação para x: 2x + 3 = 11", answer: "4" },
+  { question: "Qual é o volume de uma caixa com comprimento 2 unidades, largura 3 unidades e altura 4 unidades?", answer: "24" },
+  { question: "Qual é o resultado de 2 + 3?", answer: "5" },
+  { question: "Simplifique a expressão: 4x + 2 - 3x", answer: "x + 2" },
+  { question: "Resolva a equação para x: 2(x - 4) = 6", answer: "7" },
+  { question: "Calcule a área de um quadrado com lado de comprimento 4 unidades.", answer: "16" },
+  { question: "Se um retângulo tem comprimento 6 unidades e largura 4 unidades, qual é sua área?", answer: "24" },
+  { question: "Qual é o resultado de 10 ÷ 2?", answer: "5" },
+  { question: "Simplifique a fração: 6/9", answer: "2/3" },
+  { question: "Calcule o perímetro de um retângulo com lados de comprimento 5 unidades e largura 7 unidades.", answer: "24" },
+  { question: "Resolva a equação para x: 3x + 5 = 20", answer: "5" },
+  { question: "Qual é o volume de uma caixa com comprimento 3 unidades, largura 2 unidades e altura 4 unidades?", answer: "24" },
+  { question: "Qual é o resultado de 4 + 7?", answer: "11" },
+  { question: "Simplifique a expressão: 5y - 2y + 4y", answer: "7y" },
+  { question: "Resolva a equação para z: 3z + 6 = 15", answer: "3" },
+  { question: "Calcule a área de um triângulo com base 6 unidades e altura 4 unidades.", answer: "12" },
+  { question: "Qual é o dobro de 8?", answer: "16" },
+  { question: "Simplifique a expressão: 6a - 3a + 5a", answer: "8a" },
+  { question: "Resolva a equação para x: 4(x - 2) = 20", answer: "7" },
   { question: "Qual é o resultado de 3 x 5?", answer: "15" },
-  { question: "Simplifique a expressão: 2x + 4 - 3x", answer: "x + 4" },
+  { question: "Simplifique a expressão: 2x + 4 - 3x", answer: "4 - x" },
   { question: "Resolva a equação para x: 2(x - 3) = 8", answer: "7" },
   { question: "Calcule a área de um quadrado com lado de comprimento 6 unidades.", answer: "36" },
   { question: "Se um retângulo tem comprimento 8 unidades e largura 5 unidades, qual é sua área?", answer: "40" },
@@ -246,26 +291,32 @@ function playRound(player) {
 }
 
 // Function to render the players
+// Função para renderizar os jogadores
+// Função para renderizar os jogadores com animação
 function renderPlayers() {
-  // Select the HTML elements of the players
-  const player1 = document.getElementById("player1");
-  const player2 = document.getElementById("player2");
+  // Seleciona os elementos dos jogadores
+  const player1Element = document.getElementById("player1");
+  const player2Element = document.getElementById("player2");
 
-  // Set the position of the players based on the position of the houses
-  const squareSize = 100;
-  const boardSize = 10;
-  const player1Position = boardSize - Math.floor((player1Data.position - 1) / boardSize) - 1;
-  const player2Position = boardSize - Math.floor((player2Data.position - 1) / boardSize) - 1;
-  const player1X = ((player1Data.position - 1) % boardSize) * squareSize + squareSize / 2 + 793;
-  const player2X = ((player2Data.position - 1) % boardSize) * squareSize + squareSize / 2 + 793;
-  const player1Y = player1Position * squareSize + squareSize / 2 + 20;
-  const player2Y = player2Position * squareSize + squareSize / 2 + 20;
+  // Adiciona a classe de animação aos jogadores
+  player1Element.classList.add("player-animation");
+  player2Element.classList.add("player-animation");
 
-  // Set the position of the players in CSS
-  player1.style.top = `${player1Y}px`;
-  player1.style.left = `${player1X}px`;
-  player2.style.top = `${player2Y}px`;
-  player2.style.left = `${player2X}px`; 
+  // Obtem os elementos dos quadrados com base na posição dos jogadores
+  const square1Element = document.getElementById(`square${player1Data.position}`);
+  const square2Element = document.getElementById(`square${player2Data.position}`);
+
+  // Calcula o centro do quadrado para player1
+  const square1Rect = square1Element.getBoundingClientRect();
+  player1Element.style.position = 'absolute';
+  player1Element.style.left = `${square1Rect.left + window.scrollX + (square1Rect.width - player1Element.offsetWidth) / 2}px`;
+  player1Element.style.top = `${square1Rect.top + window.scrollY + (square1Rect.height - player1Element.offsetHeight) / 2}px`;
+
+  // Calcula o centro do quadrado para player2
+  const square2Rect = square2Element.getBoundingClientRect();
+  player2Element.style.position = 'absolute';
+  player2Element.style.left = `${square2Rect.left + window.scrollX + (square2Rect.width - player2Element.offsetWidth) / 2}px`;
+  player2Element.style.top = `${square2Rect.top + window.scrollY + (square2Rect.height - player2Element.offsetHeight) / 2}px`;
 }
 
 // Select the roll dice button

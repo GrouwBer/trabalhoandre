@@ -1,36 +1,44 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: Arial, sans-serif;
+
+
+}
+.player-animation {
+  transition: top 0.5s ease, left 0.5s ease; /* Ajuste a duração e o tipo de animação conforme necessário */
+}
 #board {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  width: 1100px;
-  height: auto;
-  border: 1px solid black;
+  width: 100%;
+  aspect-ratio: 1/1;
+  height: 100%;
   background-color: aliceblue;
   margin: auto;
 }
 
 #cobrasEscadas {
   position: absolute;
-  display: absolute;
-  flex-wrap: wrap;
-  width: 1100px;
-  height: auto;
-  margin: auto;
-}
-
-#player1, #player2 {
-  transition: top 0.5s, left 0.5s;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  margin: 0;
+  z-index: 10;
 }
 
 .square {
+  position: relative;
+  box-shadow: inset 0 0 0 1px black;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 100px;
+  width: 10%;
+  height: 10%;
+  aspect-ratio: 1/1;
   font-size: 24px;
   font-weight: bold;
-  border: 1px solid black;
 }
 
 /* Cobras */
@@ -102,31 +110,31 @@
 #player1 {
   top: 550px;
   left: 50px;
-  animation-name: player1-animation;
 }
 
 #player2 {
   background-color: blue;
   top: 550px;
   left: 150px;
-  animation-name: player2-animation;
 }
-
 
 #roll-dice {
   background-color: #4CAF50;
-  border: none;
   color: white;
-  padding: 16px 32px;
+  padding: 16px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 805px;
+  margin: 4px 2px;
   cursor: pointer;
   border-radius: 8px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
 }
 
 #roll-dice:hover {
