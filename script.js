@@ -18,7 +18,7 @@ const player2Data = {
 const originalQuestions = [
 
   { question: "Qual é o resultado de 2 + 3?", answer: "5" },
-  { question: "Simplifique a expressão: 3x + 2 - 4x", answer: "2 - x" },
+ { question: "Simplifique a expressão: 3x + 2 - 4x", answer: "2 - x" },
   { question: "Resolva a equação para x: 3(x - 1) = 6", answer: "3" },
   { question: "Calcule a área de um quadrado com lado de comprimento 3 unidades.", answer: "9" },
   { question: "Se um retângulo tem comprimento 4 unidades e largura 3 unidades, qual é sua área?", answer: "12" },
@@ -26,8 +26,7 @@ const originalQuestions = [
   { question: "Simplifique a fração: 4/8", answer: "1/2" },
   { question: "Calcule o perímetro de um retângulo com lados de comprimento 4 unidades e largura 6 unidades.", answer: "20" },
   { question: "Resolva a equação para x: 2x + 3 = 11", answer: "4" },
-  { question: "Qual é o volume de uma caixa com comprimento 2 unidades, largura 3 unidades e altura 4 unidades?", answer: "24" },
-  { question: "Qual é o resultado de 2 + 3?", answer: "5" },
+  { question: "Qual é o volume de uma caixa com comprimento 2 unidades, largura 3 unidades e altura 4 unidades?", answer: "24" },  { question: "Qual é o resultado de 2 + 3?", answer: "5" },
   { question: "Simplifique a expressão: 4x + 2 - 3x", answer: "x + 2" },
   { question: "Resolva a equação para x: 2(x - 4) = 6", answer: "7" },
   { question: "Calcule a área de um quadrado com lado de comprimento 4 unidades.", answer: "16" },
@@ -82,7 +81,6 @@ const originalQuestions = [
   { question: "Qual é a soma dos ângulos internos de um triângulo?", answer: "180" },
   { question: "Simplifique a expressão: 5b - (2b + 3b)", answer: "0" },
   { question: "Resolva a equação para y: 2y/4 = 3", answer: "6" },
-  { question: "Calcule a área de um círculo com raio 7 unidades (use π = 3.14).", answer: "153.86" },
   { question: "Qual é o resultado de 25 - 13?", answer: "12" },
   { question: "Simplifique a expressão: 6c - 2c + 4c", answer: "8c" },
   { question: "Resolva a equação para x: 2(x + 5) = 16", answer: "3" },
@@ -94,26 +92,22 @@ const originalQuestions = [
   { question: "Qual é o resultado de 5²?", answer: "25" },
   { question: "Simplifique a expressão: 2m + 3m - m", answer: "4m" },
   { question: "Resolva a equação para a: 2(a - 5) = 18", answer: "14" },
-  { question: "Calcule a área de um triângulo equilátero com lado de comprimento 9 unidades. (Utilize raiz de 3 = 1,7)", answer: "34.42" },
   { question: "Simplifique a expressão: 5p - 2p + 8p", answer: "11p" },
   { question: "Resolva a equação para x: 4(x + 2) = 36", answer: "7" },
-  { question: "Calcule a área de um círculo com raio 5 unidades (use π = 3.14).", answer: "78.5" },
+
   { question: "Qual é o resultado de 3³?", answer: "27" },
   { question: "Simplifique a expressão: 6d + 2d - 3d", answer: "5d" },
   { question: "Resolva a equação para y: 3y/2 = 9", answer: "6" },
-  { question: "Calcule o volume de uma esfera com raio 4 unidades (use π = 3.14).", answer: "268.08" },
   { question: "Qual é a soma dos ângulos internos de um quadrado?", answer: "360" },
   { question: "Simplifique a expressão: 4r - (r + 2r)", answer: "r" },
   { question: "Resolva a equação para z: 5z - 12 = 8", answer: "4" },
   { question: "Calcule a área de um trapézio com bases de comprimento 6 e 8 unidades e altura 5 unidades.", answer: "35" },
   { question: "Qual é o resultado de 14 ÷ 2?", answer: "7" },
   { question: "Simplifique a fração: 10/15", answer: "2/3" },
-  { question: "Calcule o perímetro de um círculo com raio 6 unidades (use π = 3.14).", answer: "37.68" },
   { question: "Resolva a equação para x: 2x - 5 = 11", answer: "8" },
   { question: "Qual é o resultado de 2⁴?", answer: "16" },
   { question: "Simplifique a expressão: 7a - 3a + 6a", answer: "10a" },
   { question: "Resolva a equação para b: 2(b/3) = 5", answer: "7.5" },
-  { question: "Calcule a área de um pentágono regular com lado de comprimento 4 unidades.", answer: "6.88191" },
   { question: "Qual é o resultado de 16 x 3?", answer: "48" },
   { question: "Simplifique a expressão: 2q + 5q - 3q", answer: "4q" },
   { question: "Resolva a equação para x: 3(x - 4) = 21", answer: "11" },
@@ -137,7 +131,6 @@ const originalQuestions = [
   { question: "Simplifique a expressão: 4x + 2 - 4x", answer: "2" },
   { question: "Resolva a equação para y: 3(y + 4) = 21", answer: "3" },
   { question: "Calcule a área de um quadrado com lado de comprimento 5 unidades.", answer: "25" },
-  { question: "Se um círculo tem raio 10 unidades, qual é sua circunferência? (use π = 3.14)", answer: "62.8" },
   { question: "Qual é o resultado de 14 ÷ 7?", answer: "2" },
   { question: "Simplifique a fração: 15/25", answer: "3/5" },
   { question: "Calcule o perímetro de um retângulo com lados de comprimento 6 unidades e largura 8 unidades.", answer: "28" },
@@ -154,7 +147,6 @@ const originalQuestions = [
   { question: "Qual é a soma dos ângulos internos de um hexágono?", answer: "720" },
   { question: "Simplifique a expressão: 4q - 2q + 5q", answer: "7q" },
   { question: "Resolva a equação para y: 2y/3 = 8", answer: "12" },
-  { question: "Calcule a área de um círculo com raio 6 unidades (use π = 3.14).", answer: "113.04" },
   { question: "Qual é o resultado de 20 - 8?", answer: "12" },
   { question: "Simplifique a expressão: 6r - 3r + 2r", answer: "5r" },
   { question: "Resolva a equação para x: 2(x - 4) = 14", answer: "9" },
@@ -166,16 +158,17 @@ const originalQuestions = [
   { question: "Qual é o resultado de 6²?", answer: "36" },
   { question: "Simplifique a expressão: 3m + 2m - m", answer: "4m" },
   { question: "Resolva a equação para a: 3(a - 1) = 15", answer: "6" },
-  { question: "Calcule a área de um triângulo equilátero com lado de comprimento 7 unidades. (Utilize raiz de 3 = 1,7) ", answer: "20.82" },
-  { question: "Calcule a área de um hexágono regular com lado de comprimento 6 unidades. (Utilize raiz de 3 = 1,7) ", answer: "91.80" },
+
 ];
 
 let questions = [...originalQuestions];
 
 
 function rollDice() {
-  return Math.floor(Math.random() * 6) + 1;
+  return Math.floor(Math.random() * 6) + 1 ;
 }
+// Select the roll dice button
+const rollDiceButton = document.getElementById("roll-dice");
 
 // Initial and final positions of the ladders
 const ladders = {
@@ -203,6 +196,15 @@ const snakes = {
 function movePlayer(player, steps) {
   // Move the player to the next position
   player.position += steps;
+  if (player.position >= 100) {
+    player.position = 100;
+    Swal.fire({
+      title: 'Parabéns!',
+      text: `${player.name} ganhou o jogo!`,
+      icon: 'success'
+    });
+    rollDiceButton.disabled = true;
+  }
   renderPlayers();
 
   // Check if the player has reached a ladder or snake
@@ -319,8 +321,7 @@ function renderPlayers() {
   player2Element.style.top = `${square2Rect.top + window.scrollY + (square2Rect.height - player2Element.offsetHeight) / 2}px`;
 }
 
-// Select the roll dice button
-const rollDiceButton = document.getElementById("roll-dice");
+
 
 let isPlayer1Turn = true; // Start with player 1
 
