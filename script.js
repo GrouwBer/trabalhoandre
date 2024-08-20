@@ -111,7 +111,7 @@ const originalQuestions = [
   { question: "Simplifique a expressão: 8e - (3e - 2e)", answer: "7e" },
   { question: "Resolva a equação para y: 4y/2 = 10", answer: "5" },
   { question: "Qual é a soma dos ângulos internos de um pentágono?", answer: "540" },
-  { question: "Simplifique a expressão: 6m - 4m + 2m", answer: "6m" },
+  { question: "Simplifique a expressão: 6m - 4m + 2m", answer: "4m" },
   { question: "Resolva a equação para z: 2z + 8 = 16", answer: "4" },
 
   { question: "Qual é o resultado de 18 ÷ 2?", answer: "9" },
