@@ -17,8 +17,7 @@ const player2Data = {
 // Define questions and answers
 const originalQuestions = [
 
-  { question: "Qual é o resultado de 2 + 3?", answer: "5" },
- { question: "Simplifique a expressão: 3x + 2 - 4x", answer: "2 - x" },
+{ question: "Qual é o resultado de 2 + 3?", answer: "5" },
   { question: "Resolva a equação para x: 3(x - 1) = 6", answer: "3" },
   { question: "Calcule a área de um quadrado com lado de comprimento 3 unidades.", answer: "9" },
   { question: "Se um retângulo tem comprimento 4 unidades e largura 3 unidades, qual é sua área?", answer: "12" },
@@ -27,14 +26,12 @@ const originalQuestions = [
   { question: "Calcule o perímetro de um retângulo com lados de comprimento 4 unidades e largura 6 unidades.", answer: "20" },
   { question: "Resolva a equação para x: 2x + 3 = 11", answer: "4" },
   { question: "Qual é o volume de uma caixa com comprimento 2 unidades, largura 3 unidades e altura 4 unidades?", answer: "24" },  { question: "Qual é o resultado de 2 + 3?", answer: "5" },
-  { question: "Simplifique a expressão: 4x + 2 - 3x", answer: "x + 2" },
   { question: "Resolva a equação para x: 2(x - 4) = 6", answer: "7" },
   { question: "Calcule a área de um quadrado com lado de comprimento 4 unidades.", answer: "16" },
   { question: "Se um retângulo tem comprimento 6 unidades e largura 4 unidades, qual é sua área?", answer: "24" },
   { question: "Qual é o resultado de 10 ÷ 2?", answer: "5" },
   { question: "Simplifique a fração: 6/9", answer: "2/3" },
   { question: "Qual é o resultado de 2 + 2?", answer: "4" },
-  { question: "Simplifique a expressão: 3x + 2 - 4x", answer: "2 - x" },
   { question: "Resolva a equação para x: 3(x - 1) = 6", answer: "3" },
   { question: "Calcule a área de um quadrado com lado de comprimento 3 unidades.", answer: "9" },
   { question: "Se um retângulo tem comprimento 4 unidades e largura 3 unidades, qual é sua área?", answer: "12" },
@@ -44,7 +41,6 @@ const originalQuestions = [
   { question: "Resolva a equação para x: 2x + 3 = 11", answer: "4" },
   { question: "Qual é o volume de uma caixa com comprimento 2 unidades, largura 3 unidades e altura 4 unidades?", answer: "24" },
   { question: "Qual é o resultado de 2 + 3?", answer: "5" },
-  { question: "Simplifique a expressão: 4x + 2 - 3x", answer: "x + 2" },
   { question: "Resolva a equação para x: 2(x - 4) = 6", answer: "7" },
   { question: "Calcule a área de um quadrado com lado de comprimento 4 unidades.", answer: "16" },
   { question: "Se um retângulo tem comprimento 6 unidades e largura 4 unidades, qual é sua área?", answer: "24" },
@@ -61,7 +57,6 @@ const originalQuestions = [
   { question: "Simplifique a expressão: 6a - 3a + 5a", answer: "8a" },
   { question: "Resolva a equação para x: 4(x - 2) = 20", answer: "7" },
   { question: "Qual é o resultado de 3 x 5?", answer: "15" },
-  { question: "Simplifique a expressão: 2x + 4 - 3x", answer: "4 - x" },
   { question: "Resolva a equação para x: 2(x - 3) = 8", answer: "7" },
   { question: "Calcule a área de um quadrado com lado de comprimento 6 unidades.", answer: "36" },
   { question: "Se um retângulo tem comprimento 8 unidades e largura 5 unidades, qual é sua área?", answer: "40" },
@@ -115,11 +110,10 @@ const originalQuestions = [
   { question: "Qual é o resultado de 10 + 2²?", answer: "14" },
   { question: "Simplifique a expressão: 8e - (3e - 2e)", answer: "7e" },
   { question: "Resolva a equação para y: 4y/2 = 10", answer: "5" },
-  { question: "Calcule o volume de um cilindro com raio 3 unidades e altura 10 unidades (use π = 3.14).", answer: "282.6" },
   { question: "Qual é a soma dos ângulos internos de um pentágono?", answer: "540" },
   { question: "Simplifique a expressão: 6m - 4m + 2m", answer: "6m" },
   { question: "Resolva a equação para z: 2z + 8 = 16", answer: "4" },
-  { question: "Calcule a área de um círculo com raio 9 unidades (use π = 3.14).", answer: "254.34" },
+
   { question: "Qual é o resultado de 18 ÷ 2?", answer: "9" },
   { question: "Simplifique a fração: 12/18", answer: "2/3" },
   { question: "Calcule o perímetro de um triângulo com lados de comprimento 7, 12, e 15 unidades.", answer: "34" },
@@ -154,10 +148,10 @@ const originalQuestions = [
   { question: "Qual é o resultado de 24 ÷ 4?", answer: "6" },
   { question: "Simplifique a fração: 16/24", answer: "2/3" },
   { question: "Calcule o perímetro de um quadrado com lado de comprimento 12 unidades.", answer: "48" },
-  { question: "Resolva a equação para x: 4x - 9 = 15", answer: "6" },
-  { question: "Qual é o resultado de 6²?", answer: "36" },
-  { question: "Simplifique a expressão: 3m + 2m - m", answer: "4m" },
-  { question: "Resolva a equação para a: 3(a - 1) = 15", answer: "6" },
+{ question: "Resolva a equação para x: 4x - 9 = 15", answer: "6" },
+{ question: "Qual é o resultado de 6²?", answer: "36" },
+{ question: "Simplifique a expressão: 3m + 2m - m", answer: "4m" },
+{ question: "Resolva a equação para a: 3(a - 1) = 15", answer: "6" },
 
 ];
 
